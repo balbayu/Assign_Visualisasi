@@ -158,13 +158,6 @@ with tab4:
     colors = ["#d9ead3","#b6d7a8", "#93c47d", "#6aa84f","#27c50f"]
     barplot = sns.barplot(y='review_id',x='review_score',data=total,palette=colors)
     
-    for p in barplot.patches:
-        barplot.annotate(format(p.get_height(), '.0f'), 
-                     (p.get_x() + p.get_width() / 2., p.get_height()), 
-                     ha = 'center', va = 'top', 
-                     xytext = (0, 9), 
-                     textcoords = 'offset points')
-    
     plt.title('Review Score pelanggan')
     plt.ylabel('Jumlah Review')
     plt.xlabel('Review score')
