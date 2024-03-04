@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import openpyxl
 
 #data
-data = pd.read_csv("inibenar.csv",sep=";")
+data = pd.read_csv("inibenar1.csv",sep=";")
 
 #Title
 with st.container() :
